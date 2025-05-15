@@ -17,4 +17,28 @@ public class Icono
     }
 
 
+
+    public static TendenciasMusicales.Icono getMusicalNote() {
+        return MUSICAL_NOTE;
+    }
+
+    public static void setMusicalNote(TendenciasMusicales.Icono musicalNote) {
+        MUSICAL_NOTE = musicalNote;
+    }
+
+    public static TendenciasMusicales.Icono getROCKET() {
+        return ROCKET;
+    }
+
+    public static void setROCKET(TendenciasMusicales.Icono ROCKET) {
+        Icono.ROCKET = ROCKET;
+    }
+
+    public static TendenciasMusicales.Icono getFIRE() {
+        return FIRE;
+    }
+
+    public static void setFIRE(TendenciasMusicales.Icono FIRE) {
+        Icono.FIRE = FIRE;
+    }
 }
