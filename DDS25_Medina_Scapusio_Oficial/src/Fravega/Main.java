@@ -6,6 +6,10 @@ import java.util.HashSet;
 public class Main {
     public static void main(String[] args) {
 
+        Sucursal s = new Sucursal("hola1111", "asd", new HashSet<Producto>());
+
+        ConcreteProductoBuilder concreteProductoBuilder = new ConcreteProductoBuilder();
+
         IVA i = new IVA();
         EL el = new EL();
         EO eo = new EO();
@@ -22,10 +26,17 @@ public class Main {
 
         TipoProducto hogar = new TipoProducto("Hogar", impuestosH);
 
-        Producto producto = new Producto("bluh bluh bluh", "piercing", 22, hogar);
+
+        concreteProductoBuilder.darNombre("dsdsadsadsasaaaa");
+        concreteProductoBuilder.darDesc("avcbvc");
+        concreteProductoBuilder.darTipo(hogar);
+        concreteProductoBuilder.darPrecio(10000f);
+
+        Producto producto = concreteProductoBuilder.mostrarProducto();
+        s.agregarProducto(producto);
 
 
 
-
+        System.out.println(s.getProductos());
     }
 }
